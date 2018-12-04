@@ -48,3 +48,28 @@ print(random)
 # Print 25 Random Numbers (Standard Normal Distribution)
 arr = np.random.randn(25)
 print(arr)
+
+
+# Create Matrix 10x10 with step size .1
+arr = np.arange(1,101).reshape(10,10)/10
+arr = np.linspace(.1,10,100).reshape(10,10)
+print(arr)
+
+
+mat = np.arange(1,26).reshape(5,5)
+print(mat)
+
+
+# Sum of all elements in a Matrix
+sum = np.sum(mat)
+print(sum)
+
+
+# Sum of all Columns in a Matrix
+sum = mat.sum(axis=0)
+print(sum)
+
+
+# Standard Deviation in a Matrix
+std = np.std(mat)
+print(std)
